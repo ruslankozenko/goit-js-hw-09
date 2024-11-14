@@ -25,7 +25,7 @@ function fillFormFromLocalStorage() {
 
 document.querySelector(".feedback-form").addEventListener("input", (event) => {
     const { name, value } = event.target;
-    // Оновлюємо значення у formData
+
     if (name === "email") {
         formData.email = value.trim();
     } else if (name === "message") {

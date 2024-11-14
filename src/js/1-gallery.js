@@ -1,8 +1,7 @@
+'use strict';
 
-import SimpleLightbox from 'simplelightbox';
-
-import 'simplelightbox/dist/simple-lightbox.min.css';
-
+import SimpleLightbox from "simplelightbox";
+import "simplelightbox/dist/simple-lightbox.min.css";
 
 const images = [
   {
@@ -76,7 +75,7 @@ const galleryContainer = document.querySelector('.gallery');
 
 
 const galleryMarkup = images.map(({ preview, original, description }) =>
-    `<li class="gallery-item">
+  `<li class="gallery-item">
     <a class="gallery-link" href="${original}">
     <img
       class="gallery-image"
@@ -86,7 +85,7 @@ const galleryMarkup = images.map(({ preview, original, description }) =>
   </a>
 </li>
 `
-  )
+)
   .join(' ');
 
 galleryContainer.innerHTML = galleryMarkup;
